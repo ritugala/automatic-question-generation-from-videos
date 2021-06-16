@@ -1,4 +1,4 @@
-Automatic Generation of Image Linked Questions from Videos using Image Classification and NLP
+# Automatic Generation of Image Linked Questions from Videos using Image Classification and NLP #
 
 Paper Related to this: https://arxiv.org/abs/2106.03036
 
