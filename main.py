@@ -1,9 +1,5 @@
-import transformers
-from transcripts import *
-import nltk
 from pipelines import pipeline
 from answers_similarity import similarity
-
 
 def generate_text(text):
 	timestamped_text = {}
@@ -29,8 +25,10 @@ def answer_similarity(model_answer, student_answer):
 	else:
 		return "high similarity"
 
+file = open("video_1_transcript.txt")
+text = file.read()
 
-timestamped_text, plain_text = generate_text(text18)
+timestamped_text, plain_text = generate_text(text)
 
 nlp = pipeline("question-generation")
 
@@ -45,7 +43,7 @@ for question in all_questions:
 
 	# Image labels and any additional labels provided by lecturer
 	if ("equation" in question["question"].lower() or "graph" in question["question"].lower()):
-		print("Question Can have image")
-		print("The screenshot of the video at this time is passed to the image detection model")
+		print("## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##")
+
 
 

@@ -1,0 +1,118 @@
+This first type of graph is an
+undirected graph. It's the most simple
+kind of graph you'll encounter. It is
+where edges have no orientation, that is,
+if there's an edge from node u to node V
+it is identical to the edge from V to u.
+For instance, in the following graph,
+nodes are cities and edges represent
+bi-directional roads, since if you drive
+from one city to another you can always
+retrace your steps by driving the other
+way. In contrast to undirected graphs
+there are also directed graphs. They are sometimes
+called die graphs. In These graphs the edges are directed. So
+if we have an edge from u to V then you
+can only go from node to node V not the
+other way around. In this graph you can
+see that the edges are directed because
+of the arrowheads on the edges between
+nodes. This graph could represent people
+who bought each other gifts, so an
+incoming edge represents receiving a
+gift and an outgoing edge represents
+giving a gift.
+Therefore Person E in this graph bought
+Person D a gift. Person A bought
+themselves and person B a gift.
+Person F bought nobody any gifts and
+received none. So far we've only seen
+unweighted graphs, but edges on graphs
+can contain weights to represent
+arbitrary values such as cost, distance,
+quantity. Weighted graphs
+come in both directed and undirected
+flavors.
+As a sidenote I will usually denote an
+edge of a graph as a triplet (u, v, W) to
+indicate where an edges coming from,
+where it's going to, and what its weight
+is. Of course with this notation I also
+need to specify whether the graph is
+directed or undirected. Next up, I just
+want to have a quick chat about special
+types of graphs and graph theory. There
+are so many different types of graphs,
+that I only had to select a few which
+will be most relevant for this upcoming
+video series. The most important type of
+special graph is definitely the tree.
+A tree is simply an undirected graph with
+no cycles. There are several equivalent
+definitions of a tree, such as, a graph
+with n nodes and n minus 1 edges. All the
+graphs below are trees. The
+leftmost one is also a tree even if it has no cycles. A
+related but totally different type of
+graph is a rooted tree. The distinction
+here is that a rooted tree has a
+designated root node from where every edge
+either points away or towards the
+root note. When edges point away from the
+root node the graph is called an arborescence
+or an out-tree and an arborescence or in-tree otherwise. Out-trees
+are by far more common than in-trees
+from what I've observed. It is also
+fairly common for people to refer to a
+rooted tree simply as a tree instead of
+an in or out tree. However, there is an
+important distinction there. Next are
+directed acyclic graphs. These are graphs
+with directed edges and no cycles. These
+graphs are very important and fairly
+common in computer science actually
+since they often represent structures
+with dependencies such as a scheduler, a
+build system, or a compiler. There are several efficient
+algorithms we'll be looking at to deal
+specifically with directed acyclic
+graphs such as how to find the shortest
+path and produce a topological ordering
+of nodes. A topological ordering of nodes
+is an ordering of nodes that tells you
+how to process the nodes and then graph
+so you don't perform a task before first
+having completed all its dependencies.
+This next type of special graph is a
+bipartite graph. It is one whose vertices
+can be split into two independent groups
+U and V, such that every edge connects
+between U and V. This is just a fancy way
+of saying that the graph is two-colorable or that there are no odd
+length cycles. Often a problem
+we like to ask is what is the maximum
+matching we can create on a bipartite
+graph? Suppose white nodes are jobs, and
+red nodes are people, then we can ask how
+many people can be matched to jobs. In
+this case there are a lot of edges in
+each graph, so I think the answer for
+both is four. In general it's not so
+easy if there are less edges, tougher
+constraints, and more conflicts. Bipartite
+graphs also play a critical role in the
+field of network flow which we will talk
+about later. This last type of graph is a
+complete graph. Complete Graph is one where there is a
+unique edge between every pair of nodes
+on the graph. A complete graph with n
+vertices is denoted as the graph K sub n.
+I have listed K 1 through K 6 on the
+bottom and you can easily see how this
+scales when we add more nodes. Complete
+graphs are often seen as the worst case
+possible graph you
+you possibly encounter because of how
+many edges there are. So, if you want to
+test your algorithm for performance, a
+complete graph is an easy way to start.

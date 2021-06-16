@@ -1,0 +1,394 @@
+Sentence: In the previous video, we talked about a cost function for the neural network.
+Question: What did we talk about in the previous video?
+Answer: a cost function for the neural network
+Index:0
+
+Sentence: In this video, let's start to talk about an algorithm, for trying to minimize the cost function.
+Question: What do we talk about for trying to minimize the cost function?
+Answer: an algorithm
+Index:1
+
+Sentence: In particular, we'll talk about the back propagation algorithm.
+Question: What is the cost function for the neural network?
+Answer: back propagation algorithm
+Index:2
+
+Sentence: Here's the cost function that we wrote down in the previous video.
+Question: In what video did we write down the cost function?
+Answer: the previous video
+Index:3
+
+Sentence: What we'd like to do is try to find parameters theta to try to minimize j of theta.
+Question: What do we want to do in the previous video?
+Answer: try to find parameters theta to try to minimize j of theta
+Index:4
+
+Sentence: In order to use either gradient descent or one of the advance optimization algorithms.
+Question: What do we need to do to minimize j of theta?
+Answer: gradient descent or one of the advance optimization algorithms
+Index:5
+
+Sentence: What we need to do therefore is to write code that takes this input the parameters theta and computes j of theta and these partial derivative terms.
+Question: What do we need to do to compute the parameters theta and compute j of theta?
+Answer: write code
+Index:6
+
+Sentence: Remember, that the parameters in the the neural network of these things, theta superscript l subscript ij, that's the real number and so, these are the partial derivative terms we need to compute.
+Question: What is the real number of the parameters in the neural network of these things?
+Answer: theta superscript l subscript ij
+Index:7
+
+Sentence: In order to compute the cost function j of theta, we just use this formula up here and so, what I want to do for the most of this video is focus on talking about how we can compute these partial derivative terms.
+Question: What do we want to do for the most of this video?
+Answer: how we can compute these partial derivative terms
+Index:8
+
+Sentence: Let's start by talking about the case of when we have only one training example, so imagine, if you will that our entire training set comprises only one training example which is a pair xy.
+Question: What is the training example for a neural network?
+Answer: a pair xy
+Index:9
+
+
+Sentence: I'm not going to write x1y1 just write this.
+Question: How do I write x1y1?
+Answer: write this
+Index:0
+
+Sentence: Write a one training example as xy and let's tap through the sequence of calculations we would do with this one training example.
+Question: What is the one training example?
+Answer: xy
+Index:1
+
+Sentence: The first thing we do is we apply forward propagation in order to compute whether a hypotheses actually outputs given the input.
+Question: What is the first thing we do to compute whether a hypotheses actually outputs given the input?
+Answer: forward propagation
+Index:2
+
+Sentence: Concretely, the called the a(1) is the activation values of this first layer that was the input there.
+Question: What is the activation values of the first layer that was the input there?
+Answer: the a(1)
+Index:3
+
+Sentence: So, I'm going to set that to x and then we're going to compute z(2) equals theta(1) a(1) and a(2) equals g, the sigmoid activation function applied to z(2) and this would give us our activations for the first middle layer.
+Question: What is applied to z(2)?
+Answer: sigmoid activation function
+Index:4
+Timestamp: 1:36
+
+Sentence: That is for layer two of the network and we also add those bias terms.
+Question: What does layer two of the network add?
+Answer: bias terms
+Index:5
+
+Sentence: Next we apply 2 more steps of this four and propagation to compute a(3) and a(4) which is also the upwards of a hypotheses h of x.
+Question: What are the upwards of a hypotheses h of x?
+Answer: a(3) and a(4)
+Index:6
+
+Sentence: So this is our vectorized implementation of forward propagation and it allows us to compute the activation values for all of the neurons in our neural network.Next, in order to compute the derivatives, we're going to use an algorithm called back propagation.The intuition of the back propagation algorithm is that for each note we're going to compute the term delta superscript l subscript j that's going to somehow represent the error of note j in the layer l. So, recall that a superscript l subscript j that does the activation of the j of unit in layer l and so, this delta term is in some sense going to capture our error in the activation of that neural duo.
+Question: What is the purpose of forward propagation?
+Answer: vectorized implementation of forward propagation
+Index:7
+
+Sentence: So, how we might wish the activation of that note is slightly different.
+Question: How do we wish the activation of a superscript l subscript j is?
+Answer: slightly different
+Index:8
+
+Sentence: Concretely, taking the example neural network that we have on the right which has four layers.
+Question: How many layers does the neural network have on the right?
+Answer: four layers
+Index:9
+Timestamp: 3:11
+
+Sentence: And so capital L is equal to 4.
+Question: What is equal to 4. For each output unit, we're going to compute this delta term?
+Answer: capital L
+Index:0
+
+Sentence: For each output unit, we're going to compute this delta term.
+Question: What term is computed for each output unit?
+Answer: delta
+Index:1
+Timestamp: 3:13
+
+Sentence: So, delta for the j of unit in the fourth layer is equal to just the activation of that unit minus what was the actual value of 0 in our training example.
+Question: What is the actual value of delta for the j of unit in the fourth layer in our training example?
+Answer: 0
+Index:2
+
+Sentence: So, this term here can also be written h of x subscript j, right.
+Question: What is the word for delta for the j of unit in the fourth layer?
+Answer: h of x subscript j
+Index:3
+Timestamp: 3:39
+
+Sentence: So this delta term is just the difference between when a hypotheses output and what was the value of y in our training set whereas y subscript j is the j of element of the vector value y in our labeled training set.
+Question: What is the j of element of the vector value y in our labeled training set?
+Answer: y subscript j
+Index:4
+
+Sentence: And by the way, if you think of delta a and y as vectors then you can also take those and come up with a vectorized implementation of it, which is just delta 4 gets set as a4 minus y.
+Question: What is the vectorized implementation of delta a and y?
+Answer: delta 4
+Index:5
+//can add Timestamp: 4:12
+
+Sentence: Where here, each of these delta 4 a4 and y, each of these is a vector whose dimension is equal to the number of output units in our network.
+Question: What are the vectors that are equal to the number of output units in our network?
+Answer: delta 4 a4 and y
+Index:6
+Can add Timestamp: 4:24
+
+Sentence: So we've now computed the era term's delta 4 for our network.
+Question: What is the era term for our network?
+Answer: delta 4
+Index:7
+
+Sentence: What we do next is compute the delta terms for the earlier layers in our network.
+Question: What do we do to compute the earlier term's delta 4 for our network?
+Answer: compute the delta terms for the earlier layers in our network
+Index:8
+
+Sentence: delta 3 is is equal to theta 3 transpose times delta 4.
+Question: What is equal to theta 3 transpose times delta 4?
+Answer: delta 3
+Index:9
+Timestamp: 4:39
+
+Sentence: And this dot times, this is the element y's multiplication operation that we know from MATLAB.
+Question: What does MATLAB know about dot times?
+Answer: element y's multiplication operation
+Index:0
+
+Sentence: So delta 3 transpose delta 4, that's a vector; g prime z3 that's also a vector and so dot times is in element y's multiplication between these two vectors.
+Question: What is a vector?
+Answer: delta 3 transpose delta 4
+Index:1
+
+Sentence: This term g prime of z3, that formally is actually the derivative of the activation function g evaluated at the input values given by z3.
+Question: What is the derivative of the activation function g evaluated at the input values given by z3?
+Answer: g prime of z3
+Index:2
+Timestamp: 5:21
+
+Sentence: If you know calculus, you can try to work it out yourself and see that you can simplify it to the same answer that I get.
+Question: What is the derivative of the activation function g evaluated at the input values given by z3?
+Answer: calculus
+Index:3
+
+Sentence: But I'll just tell you pragmatically what that means.
+Question: What do you do to compute g prime of z3?
+Answer: pragmatically
+Index:4
+
+Sentence: What you do to compute this g prime, these derivative terms is just a3 dot times1 minus A3 where A3 is the vector of activations.
+Question: What are the derivative terms of g prime?
+Answer: a3 dot times1 minus A3
+Index:5
+
+Sentence: 1 is the vector of ones and A3 is again the activation the vector of activation values for that layer.
+Question: What is the vector of ones?
+Answer: 1
+Index:6
+
+Sentence: Next you apply a similar formula to compute delta 2 where again that can be computed using a similar formula.
+Question: What is a similar formula used to compute delta 3 transpose delta 4?
+Answer: delta 2
+Index:7
+
+Sentence: Only now it is a2 like so and I then prove it here but you can actually, it's possible to prove it if you know calculus that this expression is equal to mathematically, the derivative of the g function of the activation function, which I'm denoting by g prime.
+Question: What expression is equal to mathematically, the derivative of the g function of the activation function, which I'm denoting by g
+Answer: calculus
+Index:8
+
+Sentence: And finally, that's it and there is no delta1 term, because the first layer corresponds to the input layer and that's just the feature we observed in our training sets, so that doesn't have any error associated with that.
+Question: What term does the first layer correspond to the input layer?
+Answer: delta1
+Index:9
+
+Sentence: It's not like, you know, we don't really want to try to change those values.
+Question: What does it look like we don't want to change values?
+Answer: we don't really want to try to change those values
+Index:0
+
+Sentence: And so we have delta terms only for layers 2, 3 and for this example.
+Question: What do layers 2 and 3 only have?
+Answer: delta terms
+Index:1
+Timestamp: 6:29
+
+Sentence: Finally, the derivation is surprisingly complicated, surprisingly involved but if you just do this few steps steps of computation it is possible to prove viral frankly some what complicated mathematical proof.
+Question: How is it possible to prove that if you ignore authorization then the partial derivative terms you want are exactly given by the activations and these delta terms?
+Answer: viral
+Index:3
+
+Sentence: It's possible to prove that if you ignore authorization then the partial derivative terms you want are exactly given by the activations and these delta terms.
+Question: What are the partial derivative terms you want to be given by if you ignore authorization?
+Answer: the activations and these delta terms
+Index:4
+
+Sentence: This is ignoring lambda or alternatively the regularization term lambda will equal to 0.
+Question: What is ignoring the regularization term lambda?
+Answer: lambda
+Index:5
+
+Sentence: We'll fix this detail later about the regularization term, but so by performing back propagation and computing these delta terms, you can, you know, pretty quickly compute these partial derivative terms for all of your parameters.
+Question: How can you compute partial derivative terms for all of your parameters?
+Answer: by performing back propagation and computing these delta terms, you can, you know, pretty quickly compute these partial derivative terms for all of your parameters
+Index:6
+
+Sentence: So this is a lot of detail.
+Question: What is the result of back propagation and computing the delta terms for all of your parameters?
+Answer: a lot of detail
+Index:7
+
+Sentence: Let's take everything and put it all together to talk about how to implement back propagation to compute derivatives with respect to your parameters.
+Question: What is a lot of detail on how to implement back propagation to compute derivatives with respect to your parameters?
+Answer: how to implement back propagation to compute derivatives with respect to your parameters
+Index:8
+
+Sentence: And for the case of when we have a large training set, not just a training set of one example, here's what we do.
+Question: What kind of training set does back propagation have?
+Answer: training set
+Index:9
+
+Sentence: Suppose we have a training set of m examples like that shown here.
+Question: What type of training set is shown here?
+Answer: training set of m examples
+Index:0
+Timestamp: 7:57
+
+Sentence: The first thing we're going to do is we're going to set these delta l subscript i j.
+Question: What is the first thing we're going to do?
+Answer: delta l subscript i j
+Index:1
+Timestamp: 8:01
+
+Sentence: So this triangular symbol?
+Question: What is the capital Greek alphabet delta?
+Answer: triangular
+Index:2
+
+Sentence: That's actually the capital Greek alphabet delta .
+Question: What is the triangular symbol?
+Answer: the capital Greek alphabet delta
+Index:3
+
+Sentence: The symbol we had on the previous slide was the lower case delta.
+Question: What was the symbol we had on the previous slide?
+Answer: lower case delta
+Index:4
+
+Sentence: So the triangle is capital delta.
+Question: What is the triangle called?
+Answer: capital delta
+Index:5
+
+Sentence: We're gonna set this equal to zero for all values of l i j.
+Question: The triangle is capital delta equal to what for all values of l i j?
+Answer: zero
+Index:6
+Timestamp: 8:17
+
+Sentence: Eventually, this capital delta l i j will be used to compute the partial derivative term, partial derivative respect to theta l i j of J of theta.
+Question: What is the capital delta l i j used to compute?
+Answer: partial derivative term
+Index:7
+Timestamp: 8:19
+
+Sentence: So as we'll see in a second, these deltas are going to be used as accumulators that will slowly add things in order to compute these partial derivatives.
+Question: What are deltas going to be used to compute partial derivatives?
+Answer: accumulators
+Index:8
+
+Sentence: Next, we're going to loop through our training set.
+Question: What is the next thing we're going to do to compute partial derivatives?
+Answer: loop through our training set
+Index:9
+Timestamp: 8:46
+
+Sentence: So, we'll say for i equals 1 through m and so for the i iteration, we're going to working with the training example xi, yi.
+Question: What is equal to 1 through m?
+Answer: i
+Index:0
+
+Sentence: So the first thing we're going to do is set a1 which is the activations of the input layer, set that to be equal to xi is the inputs for our i training example, and then we're going to perform forward propagation to compute the activations for layer two, layer three and so on up to the final layer, layer capital L. Next, we're going to use the output label yi from this specific example we're looking at to compute the error term for delta L for the output there.
+Question: What is the first thing we're going to do for the activations of the input layer?
+Answer: set a1
+Index:1
+
+Sentence: So delta L is what a hypotheses output minus what the target label was?
+Question: What is what a hypotheses output minus what the target label was?
+Answer: delta L
+Index:2
+
+Sentence: And then we're going to use the back propagation algorithm to compute delta L minus 1, delta L minus 2, and so on down to delta 2 and once again there is now delta 1 because we don't associate an error term with the input layer.
+Question: What is the back propagation algorithm used to compute delta L minus 1, delta L minus 2, and so on down to delta 2?
+Answer: delta 1
+Index:3
+
+Sentence: And finally, we're going to use these capital delta terms to accumulate these partial derivative terms that we wrote down on the previous line.
+Question: What do we use to accumulate partial derivative terms that we wrote down on the previous line?
+Answer: capital delta terms
+Index:4
+
+Sentence: And by the way, if you look at this expression, it's possible to vectorize this too.
+Question: What is possible if you look at this expression?
+Answer: vectorize this too
+Index:5
+Timestamp: 10:08
+
+Sentence: Concretely, if you think of delta ij as a matrix, indexed by subscript ij.
+Question: What indexes delta ij as a matrix?
+Answer: subscript ij
+Index:6
+
+Sentence: Then, if delta L is a matrix we can rewrite this as delta L, gets updated as delta L plus lower case delta L plus one times aL transpose.
+Question: What is a matrix that gets updated as delta L plus lower case delta L plus one times aL transpose?
+Answer: delta L
+Index:7
+
+Sentence: So that's a vectorized implementation of this that automatically does an update for all values of i and j.
+Question: What is the implementation of delta ij that automatically does an update for all values of i and j?
+Answer: vectorized
+Index:8
+
+Sentence: Finally, after executing the body of the four-loop we then go outside the four-loop and we compute the following.
+Question: After executing the body of the four-loop we go outside the four-loop and we compute the following?
+Answer: after executing the body of the four-loop
+Index:9
+
+
+Sentence: We compute capital D as follows and we have two separate cases for j equals zero and j not equals zero.
+Question: What is the difference between j and j?
+Answer: zero
+Index:0
+
+Sentence: The case of j equals zero corresponds to the bias term so when j equals zero that's why we're missing is an extra regularization term.
+Question: What does the case of j equals zero correspond to?
+Answer: an extra regularization term
+Index:1
+Timestamp:10:54
+
+Sentence: Finally, while the formal proof is pretty complicated what you can show is that once you've computed these D terms, that is exactly the partial derivative of the cost function with respect to each of your perimeters and so you can use those in either gradient descent or in one of the advanced authorization algorithms.
+Question: What does the formal proof show once you've computed these terms?
+Answer: the partial derivative of the cost function with respect to each of your perimeters
+Index:2
+Timestamp:11:08
+
+Sentence: So that's the back propagation algorithm and how you compute derivatives of your cost function for a neural network.
+Question: What is the term for how you compute derivatives of your cost function for a neural network?
+Answer: back propagation algorithm
+Index:3
+
+Sentence: I know this looks like this was a lot of details and this was a lot of steps strung together.
+Question: What was the back propagation algorithm and how you compute derivatives of your cost function for a neural network?
+Answer: a lot of details
+Index:4
+
+Sentence: But both in the programming assignments rite out and later in this video, we'll give you a summary of this so we can have all the pieces of the algorithm together so that you know exactly what you need to implement if you want to implement back propagation to compute the derivatives of your neural network's cost function with respect to those parameter
+Question: What do you need to implement to compute the derivatives of your neural network's cost function?
+Answer: back propagation
+Index:5
+

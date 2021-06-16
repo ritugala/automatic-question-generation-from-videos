@@ -1,0 +1,168 @@
+
+No of questions generated are: 12
+
+Sentence: undirected graph.
+Question: What is the most simple where edges have no orientation?
+Answer: undirected graph
+Index:0
+
+Sentence: It's the most simple where edges have no orientation, that is, it is identical to the edge from V to u. nodes are cities and edges represent from one city to another you can always way.
+Question: What is the most simple type of undirected graph?
+Answer: edges have no orientation
+Index:1
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: In contrast to undirected graphs called die graphs.
+Question: What are undirected graphs called?
+Answer: die graphs
+Index:2
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: In These graphs the edges are directed.
+Question: In undirected graphs, the edges are what?
+Answer: directed
+Index:3
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: So can only go from node to node V not the see that the edges are directed because nodes.
+Question: Why are edges directed in undirected graphs?
+Answer: nodes
+Index:4
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: This graph could represent people incoming edge represents receiving a giving a gift.
+Question: What does the incoming edge represent?
+Answer: receiving a giving a gift
+Index:5
+Timestamp: 3:46
+
+Sentence: Person D a gift.
+Question: Who bought a gift?
+Answer: Person D
+Index:6
+
+Sentence: Person A bought Person F bought nobody any gifts and unweighted graphs, but edges on graphs arbitrary values such as cost, distance, come in both directed and undirected As a sidenote I will usually denote an indicate where an edges coming from, is.
+Question: What are edges on unweighted graphs arbitrary values?
+Answer: cost, distance, come in both directed and undirected
+Index:7
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Of course with this notation I also directed or undirected.
+Question: What is the most important type of graphs and graph theory?
+Answer: directed or undirected
+Index:8
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Next up, I just types of graphs and graph theory.
+Question: What type of graphs did I use to select a few which video series?
+Answer: graph theory
+Index:9
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: There that I only had to select a few which video series.
+Question: How many video series did I have to select?
+Answer: a few
+Index:10
+
+Sentence: The most important type of
+Question: What is the most important type of graphs?
+Answer: most important type of
+Index:11
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+
+Sentence: no cycles.
+Question: What is a graph with n nodes and n minus 1 edges?
+Answer: no cycles
+Index:0
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: There are several equivalent with n nodes and n minus 1 edges.
+Question: What is the equivalent of a graph with no cycles?
+Answer: n nodes and n minus 1 edges
+Index:1
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: All the leftmost one is also a tree even if it has no cycles.
+Question: What is the leftmost graph?
+Answer: a tree
+Index:2
+Timestamp: 5.24
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: A graph is a rooted tree.
+Question: What type of tree is a graph?
+Answer: rooted
+Index:3
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: The distinction designated root node from where every edge root note.
+Question: What is the distinction between a rooted tree and an out-tree?
+Answer: root node
+Index:4
+
+Sentence: When edges point away from the or an out-tree and an arborescence or in-tree otherwise.
+Question: What is the difference between root nodes and an out-tree?
+Answer: edges point away from the or an out-tree and an arborescence or in-tree otherwise
+Index:5
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Out-trees from what I've observed.
+Question: What is rooted tree instead of important distinction?
+Answer: Out-trees
+Index:6
+
+Sentence: It is also rooted tree simply as a tree instead of important distinction there.
+Question: What is a tree?
+Answer: rooted
+Index:7
+
+Sentence: Next are with directed edges and no cycles.
+Question: What are the next two types of graphs?
+Answer: directed edges and no cycles
+Index:8
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: These common in computer science actually with dependencies such as a scheduler, a algorithms we'll be looking at to deal graphs such as how to find the shortest of nodes.
+Question: What are algorithms we'll be looking at to deal graphs?
+Answer: how to find the shortest of nodes
+Index:9
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: A topological ordering of nodes how to process the nodes and then graph having completed all its dependencies.
+Question: What is a bipartite graph?
+Answer: topological ordering of nodes how to process the nodes and then graph having completed all its dependencies
+Index:10
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: bipartite graph.
+Question: What is one whose vertices U and V?
+Answer: bipartite graph
+Index:11
+
+Sentence: It is one whose vertices U and V, such that every edge connects of saying that the graph is two-colorable or that there are no odd we like to ask is what is the maximum graph?
+Question: What are the vertices of bipartite graph?
+Answer: U and V
+Index:12
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Suppose white nodes are jobs, and many people can be matched to jobs.
+Question: What are white nodes?
+Answer: jobs
+Index:13
+Timestamp:7:52
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: In each graph, so I think the answer for easy if there are less edges, tougher graphs also play a critical role in the about later.
+Question: What type of graphs play a critical role in the about later?
+Answer: tougher
+Index:14
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: This last type of graph is a unique edge between every pair of nodes vertices is denoted as the graph K sub n. bottom and you can easily see how this graphs are often seen as the worst case you possibly encounter because of how test your algorithm for performance, a
+Question: What is type of graph that has a unique edge between every pair of vertices and denoted as?
+Answer: K sub n
+Index:15
+Timestamp: 9:03
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+

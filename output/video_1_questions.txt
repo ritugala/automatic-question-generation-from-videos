@@ -1,0 +1,113 @@
+No of questions generated are: 19
+
+Sentence: look at an example with some animation these examples assume node 0 is always perfectly fine.
+Question: What type of animation does the example show node 0 is always perfectly fine?
+Answer: animation
+Index:0
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: In red is the track the optimal distance from the the beginning the distance to every positive infinity, since we assume that every node is algorithm there's still a value of that that node is unreachable.
+Question: What is the track the optimal distance from the beginning the distance to every positive infinity?
+Answer: red
+Index:1
+
+Sentence: On the pairs corresponding to a nodes index and This priority queue will tell us which key value pair has the lowest value.
+Question: What will tell us which key value pair has the lowest value?
+Answer: priority queue
+Index:2
+
+Sentence: implemented as heaps but I'm not going with assign a distance of 0 to the the distance array also insert the key queue, to indicate that we intend on 0.
+Question: What is the distance that I'm not going with to the distance array?
+Answer: 0
+Index:3
+
+Sentence: Then the algorithm actually starts, and the first time and we discover that we visit node 1 by using the edge with a of 4, so we can update the best distance Also add this information to the priority 0.
+Question: What is the first time we visit node 1 by using the edge with a of 4?
+Answer: the algorithm actually starts, and the first time and we discover that we visit node 1 by using the edge with a of 4
+Index:4
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Just like the last node, we can update from infinity to 1.
+Question: How can we update from the last node to 1?
+Answer: infinity
+Index:5
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Additionally, note that to the priority queue.
+Question: To what do we need to visit promising node in the priority queue?
+Answer: priority queue
+Index:6
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: So that concludes decide which node we should visit promising node in the priority queue.
+Question: What does the priority queue conclude?
+Answer: decide which node we should visit promising node in the priority queue
+Index:7
+
+Sentence: To value pair from the priority queue.
+Question: What is the name of the node we should visit promising node in the priority queue?
+Answer: value pair from the priority queue
+Index:8
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Node because it has a distance of 1 from the value of 4.
+Question: What distance does node have from the value of 4?
+Answer: 1
+Index:9
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: If we take the upwards edge, we can improve the best best distance from node 2, which is 1, for a total cost of 3.
+Question: What is the best distance from node 2?
+Answer: 3
+Index:10;
+Timestamp: 6.23
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: This is better time that we find a better distance like this priority queue.
+Question: What is the best distance from node 3?
+Answer: priority queue
+Index:11
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: node3 which is six.
+Question: What is the number of node 3 in Dijkstra's priority queue?
+Answer: six
+Index:12
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: The next most promising distance to node 3 by taking the edge The next most promising node is node 1 better route to get to node 1, since the Therefore we can ignore this entry in duplicate key entries in the priority implementation of Dijkstra's the lazy outdated key value pairs.
+Question: What is Dijkstra's priority implementation?
+Answer: the lazy outdated key value pairs
+Index:13
+
+Sentence: Next up is node be 7.
+Question: What is the next most promising node?
+Answer: 7
+Index:14
+Timestamp: 7:33
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: We already found a better route to queue.
+Question: What was the next most promising route to node 4?
+Answer: better route to queue
+Index:15
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: Finally we visit node 4.
+Question: What is the next most promising route to node?
+Answer: 4
+Index:16
+Timestamp:7:43
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
+Sentence: And that's Dijkstra's.
+Question: What is Dijkstra's name?
+Answer: Dijkstra
+Index:17
+
+Sentence: There are only a few moving really keep track of is the distance so far from the start node to every tells us which node we should visit next
+Question: What tells us which node we should visit next?
+Answer: distance so far from the start node to every
+Index:18
+## Question Can have image, The screenshot of the video at this time is passed to the image detection model ##
+
