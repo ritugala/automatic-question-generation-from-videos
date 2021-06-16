@@ -85,3 +85,9 @@ def prediction_scaling(predictions):
     else:
         print "smaller than 0.25"
         #assign i to class 0
+
+## for prediction
+# if __name__=='__main__':
+    ## load model
+    ## prepare input images for model by running preprocessing as given in "create_train_test_data" function
+    ## run the function predict(model, list_of_images)
